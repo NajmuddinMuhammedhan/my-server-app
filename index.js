@@ -18,6 +18,16 @@ app.get('/users', (req, res) => {
 	res.send(data)
 })
 
+app.get('/books', (req, res) => {
+
+	const data = [
+		{ id: 1, name: 'JavaScript', },
+		{ id: 2, username: 'Swift', },
+	]
+
+	res.send(data)
+})
+
 app.listen(PORT, () => {
 	console.log('Server ready at: ' + PORT)
 })
